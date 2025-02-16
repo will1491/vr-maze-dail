@@ -39,16 +39,6 @@ This is the main algorithm for identifying participants' wayfinding behaviors, s
    - Extracts participant IDs from trajectory plots.
    - Reorders the PDF pages to ensure that data is presented in a structured way.
 
-## Data Processing Overview
-The algorithm reads trajectory data from `.txt` files formatted with the following columns:
-- `UNIX`: Timestamps
-- `xHead, yHead`: X and Y coordinates
-- `Task`: Associated navigation task
-
-It outputs:
-- A **CSV file** (`Table_Backtrack.csv`) containing detected backtracking moments per participant.
-- A **multi-page PDF** (`All_Trajectory_Plots.pdf`) with visualized movement paths and detected backtracking instances.
-
 ## Installation & Usage
 ### Requirements
 This project requires Python and the following dependencies:
